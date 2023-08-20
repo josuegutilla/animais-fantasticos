@@ -1,0 +1,12 @@
+.footer {
+  grid-column: 1 / 4;
+  background-color: #645CAA;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  padding: 20px;
+}
+
+.footer p {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: normal;
+}

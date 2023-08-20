@@ -1,0 +1,39 @@
+.menu {
+  background-color: #645CAA;
+  grid-column: 3 / 5;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 10px;
+}
+
+.menu li a {
+  display: block;
+  color: #ffffff;
+  margin-right: 10px;
+  text-decoration: none;
+  padding: 10px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: bold;
+  font-size: .875rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  position: relative;
+}
+
+.menu li a:hover {
+  transition: .1s;
+  color: #2D2727;
+}
+
+.arrow-black {
+  background: url(../img/triangle-right.svg) no-repeat center center;
+  display: inline-block;
+  width: 8px;
+  height: 10px;
+}
