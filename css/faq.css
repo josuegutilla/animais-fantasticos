@@ -32,11 +32,30 @@
   display: inline-block;
   background: url(../img/triangle-down.svg) no-repeat center center;
   margin-left: 10px;
-  /* transform: rotate(90deg); */
-  transition: trasnform .3s;
+  transition: trasnform .4s;
 }
 
 [data-anime="accordion"] dt.ativo::after {
   content: '';
   transform: rotate(-180deg);
+}
+
+[data-anime="accordion"] dd {
+  display: none;
+}
+
+[data-anime="accordion"] dd.ativo {
+  display: block;
+  animation: sildeDown .2s forwards;
+}
+
+@keyframes sildeDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 100px;
+  }
 }
