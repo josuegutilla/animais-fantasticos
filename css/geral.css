@@ -15,3 +15,30 @@ img {
 ul {
   list-style: none;
 }
+
+/*  */
+
+@media (max-width: 700px) {
+  .menu {
+    grid-column: 1 / -1;
+    margin-top: 0px;
+  }
+  .grid-section h1 {
+    font-size: 2.5rem;
+  }
+  .grid-section .animais-imagens {
+    grid-column: 1;
+  }
+  .grid-section .faq-lista {
+    grid-column: 1 / -1;
+  }
+  .grid-section .mapa {
+    grid-column: 1 / -1;
+  }
+  .grid-section .dados {
+    grid-column: 1 / -1;
+  }
+  .grid-container .footer {
+    margin-bottom: 0px;
+  }
+}
