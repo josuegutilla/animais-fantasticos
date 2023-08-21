@@ -44,6 +44,38 @@
   margin-bottom: 1rem;
 }
 
-.animais-descricao {
+[data-tab="descricao"] section {
   display: none;
+}
+
+[data-tab="descricao"] section.ativo.show-rigth {
+  display: block !important;
+  animation: show-rigth .3s forwards;
+}
+
+[data-tab="descricao"] section.ativo.show-down {
+  display: block !important;
+  animation: show-down .3s forwards;
+}
+
+@keyframes show-rigth {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 5;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes show-down {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 5;
+    transform: translate3d(0, 0, 0);
+  }
 }

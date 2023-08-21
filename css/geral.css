@@ -16,7 +16,7 @@ ul {
   list-style: none;
 }
 
-/*  */
+/* Resposivo  */
 
 @media (max-width: 700px) {
   .menu {
