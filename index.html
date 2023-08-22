@@ -7,10 +7,7 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div class="grid-container">
@@ -125,6 +122,19 @@
         <p>Todos os direitos reservados.</p>
       </footer>
     </div>
+
+    <section class="modal-container" data-modal="container">
+      <div class="modal">
+        <button data-modal="fechar" class="fechar">X</button>
+        <form action="">
+          <label for="email">Email</label>
+          <input type="text" for="email" id="email">
+          <label for="senha">Senha</label>
+          <input type="password" for="senha" id="senha">
+          <button class="button-entrar" type="submit">Entrar</button>
+        </form>
+      </div>
+    </section>
 
     <script type="module" src="./js/script.js"></script>
   </body>

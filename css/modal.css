@@ -1,0 +1,88 @@
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.modal {
+  background-color: #ffffff;
+  width: 80vw;
+  max-width: 600px;
+  padding: 40px;
+  border: 10px solid #645CAA;
+  box-shadow: 0 0 0 10px #ffffff;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.fechar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: #d84747;
+  color: #ffffff;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  cursor: pointer;
+}
+.fechar:hover {
+  background-color: #ce4343;
+}
+
+.modal label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 600;
+  display: block;
+  margin: 1rem 0 0.4rem 0;
+}
+
+.modal input {
+  display: block;
+  width: 100%;
+  padding: 0.7rem 0.5rem;
+  box-sizing: border-box;
+  border: 2px solid #222;
+  border-radius: 0px;
+}
+
+.button-entrar {
+  margin-top: 1rem;
+  background-color: #645CAA;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-family: 'IBM Plex Mono', monospace;
+  border-radius: 4px;
+  cursor: pointer;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.1rem;
+}
+
+.button-entrar:hover {
+  background-color: #645caaf1;
+}
+
+.modal-container.ativo {
+  display: flex;
+  animation: modal-down .3s forwards;
+}
+
+@keyframes modal-down {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
