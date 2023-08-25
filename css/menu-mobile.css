@@ -1,0 +1,66 @@
+[data-menu="button"] {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  [data-menu="button"] {
+    background-color: #222222;
+    padding: .5rem 1rem;
+    color: #ffffff;
+    border-radius: 4px;
+    font-family: 'IBM plex Mono', monospace;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+    border: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 9999;
+  }
+  [data-menu="button"]::before {
+    content: '';
+    width: 12px;
+    height: 2px;
+    background-color: #fff;
+    display: inline-block;
+    box-shadow: 0 4px #fff, 0 -4px #fff;
+    margin-right: 4px;
+    transition: transform .3s;
+  }
+  [data-menu="button"].ativo::before {
+    transform: rotate(90deg);
+  }
+  #menu {
+    display: none;
+    position: absolute;
+    background-color: #645CAA;
+    width: 160px;
+    top: 0;
+    padding: 60px 0 20px 0;
+    z-index: 8888;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+    animation: anime-menuList .2s forwards;
+  }
+  #menu.ativo {
+    display: block;
+  }
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    padding: 0px;
+  }
+
+  @keyframes anime-menuList {
+    from {
+      opacity: 0;
+      transform: translate3d(-30px, 0, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
