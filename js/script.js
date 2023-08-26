@@ -7,6 +7,7 @@ import initTooltip from './modules/tooltip.js';
 import initDropdownMenu from './modules/dropdown-menu.js';
 import initOutsideClick from './modules/outsideclick.js';
 import initMenuMobile from './modules/menu-mobile.js';
+import initAnimaNumeros from './modules/anima-numeros.js';
 
 initTabNav();
 initAccordionList();
@@ -17,3 +18,4 @@ initTooltip();
 initDropdownMenu();
 initOutsideClick();
 initMenuMobile();
+initAnimaNumeros();
