@@ -8,6 +8,7 @@ import initDropdownMenu from './modules/dropdown-menu.js';
 import initOutsideClick from './modules/outsideclick.js';
 import initMenuMobile from './modules/menu-mobile.js';
 import initAnimaNumeros from './modules/anima-numeros.js';
+import initFuncionamento from './modules/funcionamento.js';
 
 initTabNav();
 initAccordionList();
@@ -19,3 +20,4 @@ initDropdownMenu();
 initOutsideClick();
 initMenuMobile();
 initAnimaNumeros();
+initFuncionamento();
