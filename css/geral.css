@@ -55,3 +55,12 @@ ul {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
+
+/*Bitcoin*/
+.btc-preco {
+  background-color: #8F43EE;
+  padding: .2rem .5rem;
+  font-weight: bold;
+  border-radius: 3px;
+  color: #ffffff;
+}
