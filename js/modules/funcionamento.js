@@ -4,7 +4,7 @@ export default function initFuncionamento() {
   const diasSemana = funciomanto.dataset.semana.split(',').map(Number);
   const horariosSemana = funciomanto.dataset.horario.split(',').map(Number);
 
-  const dataAgora = new Date;
+  const dataAgora = new Date();
   const diaAgora = dataAgora.getDay();
   const horasAgora = dataAgora.getHours();
 
