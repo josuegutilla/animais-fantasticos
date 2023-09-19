@@ -4,13 +4,20 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production ./js/script.js -o ./main.js",
+    "dev": "webpack --mode development ./js/script.js -o ./main.js --watch"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.49.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.28.1"
+    "eslint-plugin-import": "^2.28.1",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "whatwg-fetch": "^3.6.19"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1"
   }
 }
